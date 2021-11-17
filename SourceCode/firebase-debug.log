@@ -1,0 +1,47 @@
+n[debug] [2021-11-09T21:35:25.430Z] ----------------------------------------------------------------------
+[debug] [2021-11-09T21:35:25.432Z] Command:       /usr/local/bin/firebase /Users/jayanthchowdary/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-11-09T21:35:25.432Z] CLI Version:   9.22.0
+[debug] [2021-11-09T21:35:25.433Z] Platform:      darwin
+[debug] [2021-11-09T21:35:25.433Z] Node Version:  v12.18.1
+[debug] [2021-11-09T21:35:25.434Z] Time:          Tue Nov 09 2021 15:35:25 GMT-0600 (Central Standard Time)
+[debug] [2021-11-09T21:35:25.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-09T21:35:25.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-09T21:35:25.491Z] > authorizing via signed-in user (golla.jayanth09@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jayanthchowdary/Downloads/Reactive-Resume-develop
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using rx-resume. 
+[debug] [2021-11-09T21:35:32.891Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rx-resume [none]
+[debug] [2021-11-09T21:35:33.390Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rx-resume 403
+[debug] [2021-11-09T21:35:33.390Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rx-resume {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-11-09T21:35:33.391Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-11-09T21:35:33.477Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/Users/jayanthchowdary/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/Users/jayanthchowdary/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/Users/jayanthchowdary/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/Users/jayanthchowdary/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/Users/jayanthchowdary/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/Users/jayanthchowdary/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project rx-resume. Please make sure the project exists and your account has permission to access it.
